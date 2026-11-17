@@ -315,6 +315,10 @@ def desactivar_todos():
 ### Arrancar la API en Ubuntu (Terminal 1)
 
 ```bash
+sudo python3 -m http.server 80 > /dev/null 2>&1 &
+cd ~/Desktop/ACL && python3 app.py
+
+
 sudo -v
 sudo python3 -m http.server 80 > /dev/null 2>&1 &
 cd ~/Desktop/ACL
